@@ -28,7 +28,6 @@ Contains the following columns:
 * `filesize` – size of TIFF file in bytes
 * `width` – width of TIFF in pixels
 * `height` – height of TIFF in pixels
-* `copy_role`
 
 ## `single_maps_20230131_coordinates.csv`
 
