@@ -2,7 +2,7 @@
 
 [![Frictionless](https://github.com/GLAM-Workbench/trove-maps-data/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/pages/dashboard.html?user=frictionlessdata&repo=repository-demo&flow=frictionless)
 
-This repository contains metadata describing digitised maps in Trove. The methods used in creating the datasets are described in the Trove Maps section of the GLAM Workbench.
+This repository contains metadata describing digitised maps in Trove. The methods used in creating the datasets are described in the [Trove Maps](https://glam-workbench.net/trove-maps/) section of the GLAM Workbench.
 
 Files include:
 
