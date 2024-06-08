@@ -45,7 +45,11 @@
             },
             "name": "trove-maps-data",
             "url": "https://github.com/GLAM-Workbench/trove-maps-data",
-            "workExample": []
+            "workExample": [
+                {
+                    "@id": "https://glam-workbench.net/trove-maps/trove-map-clusters.html"
+                }
+            ]
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -246,6 +250,12 @@
             },
             "name": "Trove digitised maps \u2013 coordinates",
             "url": "https://glam-workbench.net/trove-maps/single-maps-coordinates-data/"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-maps/trove-map-clusters.html",
+            "@type": "CreativeWork",
+            "name": "Locations of Trove digitised maps",
+            "url": "https://glam-workbench.net/trove-maps/trove-map-clusters.html"
         },
         {
             "@id": "https://glam-workbench.net/trove-maps/exploring-digitised-maps/",
