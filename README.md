@@ -1,52 +1,74 @@
-# Digitised maps in Trove
+# trove-maps-data
 
-[![Frictionless](https://github.com/GLAM-Workbench/trove-maps-data/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/pages/dashboard.html?user=frictionlessdata&repo=repository-demo&flow=frictionless)
+This dataset contains metadata describing digitised maps in Trove, harvested from the Trove API and other sources.
 
-This repository contains metadata describing digitised maps in Trove. The methods used in creating the datasets are described in the [Trove Maps](https://glam-workbench.net/trove-maps/) section of the GLAM Workbench.
+These datasets were generated using notebooks in the [trove-maps](https://github.com/GLAM-Workbench/trove-maps/) repository.
 
-Files include:
+For more information and documentation see the [Trove digitised maps metadata](https://glam-workbench.net/trove-maps/single-maps-data/) section of the [GLAM Workbench](https://glam-workbench.net).
 
-* `single_maps_20230131.csv` – metadata harvested from Trove
-* `single_maps_20230131_coordinates.csv` – coordinate strings in the metadata (points and bounding boxes) parsed and converted to decimal values
-
-## `single_maps_20230131.csv`
-
-Contains the following columns:
-
-* `title` – title of the map
-* `url` – url to the map in the digitised file viewer
-* `work_url` – url to the work in the Trove map category
-* `identifier` – NLA identifier
-* `date` – date published or created
-* `creators` – creators of the map
-* `publication` – publication place, publisher, and publication date (if available)
-* `extent` – physical description of map
-* `copyright_status` – copyright status based on available metadata (scraped from web page)
-* `scale` – map scale
-* `coordinates` – map coordinates, either a point or a bounding box (format is 'W--E/N--S', eg: 'E 130⁰50'--E 131⁰00'/S 12⁰30'--S 12⁰40')
-* `filesize_string` – filesize string in MB
-* `filesize` – size of TIFF file in bytes
-* `width` – width of TIFF in pixels
-* `height` – height of TIFF in pixels
-
-## `single_maps_20230131_coordinates.csv`
-
-Contains the following metadata:
-
-* `title` – title of the map
-* `url` – url to the map in the digitised file viewer
-* `coordinates` – map coordinates, either a point or a bounding box (format is 'W--E/N--S', eg: 'E 130⁰50'--E 131⁰00'/S 12⁰30'--S 12⁰40')
-
-Points or centres derived from bounding box:
-
-* `latitude`
-* `longitude`
-
-Bounds of box:
-
-* `north`
-* `south`
-* `east`
-* `west`
+## Dataset summary
+- [single_maps.csv](https://github.com/GLAM-Workbench/trove-maps-data/raw/main/single_maps.csv) (14.8 MB, text/csv)
+- [single_maps_coordinates.csv](https://github.com/GLAM-Workbench/trove-maps-data/raw/main/single_maps_coordinates.csv) (7.1 MB, text/csv)
 
 
+## Dataset details
+
+### [single_maps.csv](https://github.com/GLAM-Workbench/trove-maps-data/raw/main/single_maps.csv)
+
+|                |                                                                                                                                                                                                                          |
+|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| date harvested | 2024-06-08                                                                                                                                                                                                               |
+| file size      | 14.8 MB                                                                                                                                                                                                                  |
+| format         | text/csv                                                                                                                                                                                                                 |
+| created by     | <a href='https://github.com/GLAM-Workbench/trove-maps/blob/None/Exploring-digitised-maps.ipynb'>Exploring digitised maps in Trove</a> ([documentation](https://glam-workbench.net/trove-maps/exploring-digitised-maps/)) |
+| number of rows | 34844                                                                                                                                                                                                                    |
+
+#### Columns
+
+| name               | type    | description                                                                                                             |
+|:-------------------|:--------|:------------------------------------------------------------------------------------------------------------------------|
+| `identifier`       | string  | NLA identifier                                                                                                          |
+| `title`            | string  | title of the map                                                                                                        |
+| `url`              | string  | url to the map in the digitised file viewer                                                                             |
+| `work_url`         | string  | url to the work in the Trove map category                                                                               |
+| `date`             | string  | date published or created                                                                                               |
+| `creators`         | string  | creators of the map                                                                                                     |
+| `publication`      | string  | publication place, publisher, and publication date (if available)                                                       |
+| `extent`           | string  | physical description of map                                                                                             |
+| `copyright_status` | string  | copyright status based on available metadata (scraped from web page)                                                    |
+| `scale`            | string  | map scale                                                                                                               |
+| `coordinates`      | string  | map coordinates, either a point or a bounding box (format is 'W--E/N--S', eg: 'E 130⁰50'--E 131⁰00'/S 12⁰30'--S 12⁰40') |
+| `filesize_string`  | string  | filesize string in MB                                                                                                   |
+| `filesize`         | integer | size of TIFF file in bytes                                                                                              |
+| `width`            | any     | width of TIFF in pixels                                                                                                 |
+| `height`           | any     | height of TIFF in pixels                                                                                                |
+| `copy_role`        | string  | code indicating type of download available                                                                              |
+
+### [single_maps_coordinates.csv](https://github.com/GLAM-Workbench/trove-maps-data/raw/main/single_maps_coordinates.csv)
+
+|                |                                                                                                                                                                                                              |
+|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| date harvested | 2024-06-08                                                                                                                                                                                                   |
+| file size      | 7.1 MB                                                                                                                                                                                                       |
+| format         | text/csv                                                                                                                                                                                                     |
+| created by     | <a href='https://github.com/GLAM-Workbench/trove-maps/blob/None/parse_coordinates.ipynb'>Parse map coordinates from metadata</a> ([documentation](https://glam-workbench.net/trove-maps/parse-coordinates/)) |
+| number of rows | 28779                                                                                                                                                                                                        |
+
+#### Columns
+
+| name          | type   | description                                                                                                                         |
+|:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------|
+| `title`       | string | title of the map                                                                                                                    |
+| `url`         | string | url to the map in the digitised file viewer                                                                                         |
+| `coordinates` | string | map coordinates as a string, either a point or a bounding box (format is 'W--E/N--S', eg: 'E 130⁰50'--E 131⁰00'/S 12⁰30'--S 12⁰40') |
+| `east`        | number | east bounds of box                                                                                                                  |
+| `west`        | number | west bounds of box                                                                                                                  |
+| `north`       | number | north bounds of box                                                                                                                 |
+| `south`       | number | south bounds of box                                                                                                                 |
+| `latitude`    | number | point from coordinates or centre of box                                                                                             |
+| `longitude`   | number | point from coordinates or centre of box                                                                                             |## Examples of use
+
+
+
+----
+Created by [Tim Sherratt](https://timsherratt.au) for the [GLAM Workbench](https://glam-workbench.net)

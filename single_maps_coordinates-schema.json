@@ -1,0 +1,49 @@
+{
+  "fields": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "title of the map"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "url to the map in the digitised file viewer"
+    },
+    {
+      "name": "coordinates",
+      "type": "string",
+      "description": "map coordinates as a string, either a point or a bounding box (format is 'W--E/N--S', eg: 'E 130⁰50'--E 131⁰00'/S 12⁰30'--S 12⁰40')"
+    },
+    {
+      "name": "east",
+      "type": "number",
+      "description": "east bounds of box"
+    },
+    {
+      "name": "west",
+      "type": "number",
+      "description": "west bounds of box"
+    },
+    {
+      "name": "north",
+      "type": "number",
+      "description": "north bounds of box"
+    },
+    {
+      "name": "south",
+      "type": "number",
+      "description": "south bounds of box"
+    },
+    {
+      "name": "latitude",
+      "type": "number",
+      "description": "point from coordinates or centre of box"
+    },
+    {
+      "name": "longitude",
+      "type": "number",
+      "description": "point from coordinates or centre of box"
+    }
+  ]
+}

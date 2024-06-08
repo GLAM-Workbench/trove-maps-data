@@ -1,0 +1,310 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "datePublished": "2024-06-08",
+            "description": "This dataset contains metadata describing digitised maps in Trove, harvested from the Trove API and other sources.",
+            "distribution": {
+                "@id": "https://github.com/GLAM-Workbench/trove-maps-data/archive/refs/heads/main.zip"
+            },
+            "hasPart": [
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-maps/blob/master/parse_coordinates.ipynb"
+                },
+                {
+                    "@id": "single_maps.csv"
+                },
+                {
+                    "@id": "single_maps_coordinates.csv"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-maps/blob/master/Exploring-digitised-maps.ipynb"
+                },
+                {
+                    "@id": "single_maps-schema.json"
+                },
+                {
+                    "@id": "single_maps_coordinates-schema.json"
+                }
+            ],
+            "isBasedOn": {
+                "@id": "https://github.com/GLAM-Workbench/trove-maps/"
+            },
+            "license": {
+                "@id": "https://spdx.org/licenses/MIT"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-maps/single-maps-data/"
+            },
+            "name": "trove-maps-data",
+            "url": "https://github.com/GLAM-Workbench/trove-maps-data",
+            "workExample": []
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "license": {
+                "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+            }
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-maps/blob/master/parse_coordinates.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "category": "",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-maps/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "The harvest of digitised maps metadata includes a coordinates column that provides a string representation of either a point or a bounding box. This notebook attempts to parse the coordinate string and convert the values to decimals. It then uses the decimal values to explore the geographical context of Trove's digitised map collection.",
+            "encodingFormat": "application/x-ipynb+json",
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-maps/parse-coordinates/"
+            },
+            "name": "Parse map coordinates from metadata",
+            "position": 1,
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/master/parse_coordinates.ipynb",
+            "workExample": []
+        },
+        {
+            "@id": "single_maps.csv",
+            "@type": [
+                "File",
+                "Dataset"
+            ],
+            "conformsTo": {
+                "@id": "single_maps-schema.json"
+            },
+            "contentSize": 14752472,
+            "dateModified": "2024-06-08",
+            "encodingFormat": "text/csv",
+            "name": "single_maps.csv",
+            "sdDatePublished": "2024-06-08",
+            "size": 34844,
+            "url": "https://github.com/GLAM-Workbench/trove-maps-data/blob/main/single_maps.csv"
+        },
+        {
+            "@id": "single_maps_coordinates.csv",
+            "@type": [
+                "File",
+                "Dataset"
+            ],
+            "conformsTo": {
+                "@id": "single_maps_coordinates-schema.json"
+            },
+            "contentSize": 7055489,
+            "dateModified": "2024-06-08",
+            "encodingFormat": "text/csv",
+            "name": "single_maps_coordinates.csv",
+            "sdDatePublished": "2024-06-08",
+            "size": 28779,
+            "url": "https://github.com/GLAM-Workbench/trove-maps-data/blob/main/single_maps_coordinates.csv"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-maps/blob/master/Exploring-digitised-maps.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "category": "",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-maps/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "I knew there were lots of great maps you could download from Trove, but how many? And how big were the files? I thought I'd try to quantify this a bit by harvesting and analysing the metadata.",
+            "encodingFormat": "application/x-ipynb+json",
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-maps/exploring-digitised-maps/"
+            },
+            "name": "Exploring digitised maps in Trove",
+            "position": 0,
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/master/Exploring-digitised-maps.ipynb",
+            "workExample": []
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-7956-4498",
+            "@type": "Person",
+            "mainEntityOfPage": "https://timsherratt.au",
+            "name": "Sherratt, Tim",
+            "orcid": "https://orcid.org/0000-0001-7956-4498"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-maps/",
+            "@type": "Dataset",
+            "name": "trove-maps",
+            "url": "https://github.com/GLAM-Workbench/trove-maps/"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-maps-data/archive/refs/heads/main.zip",
+            "@type": "DataDownload",
+            "name": "Download repository as zip",
+            "url": "https://github.com/GLAM-Workbench/trove-maps-data/archive/refs/heads/main.zip"
+        },
+        {
+            "@id": "https://spdx.org/licenses/MIT",
+            "@type": "CreativeWork",
+            "name": "MIT License",
+            "url": "https://spdx.org/licenses/MIT.html"
+        },
+        {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "@type": "CreativeWork",
+            "name": "CC0 Public Domain Dedication",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+            "@id": "http://rightsstatements.org/vocab/NKC/1.0/",
+            "@type": "CreativeWork",
+            "description": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+            "name": "No Known Copyright",
+            "url": "http://rightsstatements.org/vocab/NKC/1.0/"
+        },
+        {
+            "@id": "http://rightsstatements.org/vocab/CNE/1.0/",
+            "@type": "CreativeWork",
+            "description": "The copyright and related rights status of this Item has not been evaluated.",
+            "name": "Copyright Not Evaluated",
+            "url": "http://rightsstatements.org/vocab/CNE/1.0/"
+        },
+        {
+            "@id": "https://www.python.org/downloads/release/python-31012/",
+            "@type": [
+                "ComputerLanguage",
+                "SoftwareApplication"
+            ],
+            "name": "Python 3.10.12",
+            "url": "https://www.python.org/downloads/release/python-31012/",
+            "version": "3.10.12"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-maps/parse-coordinates/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Parse map coordinates from metadata",
+            "url": "https://glam-workbench.net/trove-maps/parse-coordinates/"
+        },
+        {
+            "@id": "#parse_coordinates_run_0",
+            "@type": "CreateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2024-06-08",
+            "instrument": {
+                "@id": "https://github.com/GLAM-Workbench/trove-maps/blob/master/parse_coordinates.ipynb"
+            },
+            "name": "Run of notebook: parse_coordinates.ipynb",
+            "object": [
+                {
+                    "@id": "single_maps.csv"
+                }
+            ],
+            "result": [
+                {
+                    "@id": "single_maps_coordinates.csv"
+                }
+            ]
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-maps/single-maps-coordinates-data/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Trove digitised maps \u2013 coordinates",
+            "url": "https://glam-workbench.net/trove-maps/single-maps-coordinates-data/"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-maps/exploring-digitised-maps/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Exploring digitised maps in Trove",
+            "url": "https://glam-workbench.net/trove-maps/exploring-digitised-maps/"
+        },
+        {
+            "@id": "#Exploring-digitised-maps_run_0",
+            "@type": "CreateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2024-06-08",
+            "instrument": {
+                "@id": "https://github.com/GLAM-Workbench/trove-maps/blob/master/Exploring-digitised-maps.ipynb"
+            },
+            "name": "Run of notebook: Exploring-digitised-maps.ipynb",
+            "result": [
+                {
+                    "@id": "single_maps.csv"
+                }
+            ]
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-maps/single-maps-data/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Trove digitised maps metadata",
+            "url": "https://glam-workbench.net/trove-maps/single-maps-data/"
+        },
+        {
+            "@id": "single_maps-schema.json",
+            "@type": [
+                "File"
+            ],
+            "conformsTo": {
+                "@id": "https://specs.frictionlessdata.io/table-schema/"
+            },
+            "encodingFormat": "application/json",
+            "name": "Frictionless Table Schema for single_maps.csv dataset",
+            "url": "https://github.com/GLAM-Workbench/trove-maps-data/raw/main/single_maps-schema.json"
+        },
+        {
+            "@id": "single_maps_coordinates-schema.json",
+            "@type": [
+                "File"
+            ],
+            "conformsTo": {
+                "@id": "https://specs.frictionlessdata.io/table-schema/"
+            },
+            "encodingFormat": "application/json",
+            "name": "Frictionless Table Schema for single_maps_coordinates.csv dataset",
+            "url": "https://github.com/GLAM-Workbench/trove-maps-data/raw/main/single_maps_coordinates-schema.json"
+        }
+    ]
+}

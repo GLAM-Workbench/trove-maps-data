@@ -1,0 +1,84 @@
+{
+  "fields": [
+    {
+      "name": "identifier",
+      "type": "string",
+      "description": "NLA identifier"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "title of the map"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "url to the map in the digitised file viewer"
+    },
+    {
+      "name": "work_url",
+      "type": "string",
+      "description": "url to the work in the Trove map category"
+    },
+    {
+      "name": "date",
+      "type": "string",
+      "description": "date published or created"
+    },
+    {
+      "name": "creators",
+      "type": "string",
+      "description": "creators of the map"
+    },
+    {
+      "name": "publication",
+      "type": "string",
+      "description": "publication place, publisher, and publication date (if available)"
+    },
+    {
+      "name": "extent",
+      "type": "string",
+      "description": "physical description of map"
+    },
+    {
+      "name": "copyright_status",
+      "type": "string",
+      "description": "copyright status based on available metadata (scraped from web page)"
+    },
+    {
+      "name": "scale",
+      "type": "string",
+      "description": "map scale"
+    },
+    {
+      "name": "coordinates",
+      "type": "string",
+      "description": "map coordinates, either a point or a bounding box (format is 'W--E/N--S', eg: 'E 130⁰50'--E 131⁰00'/S 12⁰30'--S 12⁰40')"
+    },
+    {
+      "name": "filesize_string",
+      "type": "string",
+      "description": "filesize string in MB"
+    },
+    {
+      "name": "filesize",
+      "type": "integer",
+      "description": "size of TIFF file in bytes"
+    },
+    {
+      "name": "width",
+      "type": "any",
+      "description": "width of TIFF in pixels"
+    },
+    {
+      "name": "height",
+      "type": "any",
+      "description": "height of TIFF in pixels"
+    },
+    {
+      "name": "copy_role",
+      "type": "string",
+      "description": "code indicating type of download available"
+    }
+  ]
+}
